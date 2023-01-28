@@ -1,0 +1,102 @@
+## Vue-BabylonJS helps you create high quality 3D graphics in the web.
+## It's as easy as writing HTML and CSS.
+
+
+
+---
+
+#### Vue-BabylonJS is a powerful tool. You can create 3D graphics featuring:
+- <router-link to="/physics">Physics</router-link>
+- <router-link to="/light">Lighting Properties</router-link>
+- <router-link to="/camera">Cameras</router-link>
+- <router-link to="/texture">Textures</router-link> or <router-link to="/material">Materials</router-link>
+- More (See Sidebar)
+
+---
+
+
+# **Get Started**
+
+
+## Installation:
+<router-link to="/installation">See instructions page</router-link>
+
+## Usage:
+
+## Important things to know
+
+ - **All components of this library must be a descendant of the <router-link to="/scene">Scene Component</router-link>.**
+ - Many components expect to be a child of specific components defined by this plugin, check the API documentation of the component to see what its requirements are
+
+### Types for props (attributes)
+
+**Vue bindings are important when using this plugin**
+
+Always use `v-bind:property` or the shorthand `:property` on attributes to components that expect non-string values!
+
+The following BabylonJS types have specific helpers in this plugin:
+
+ - `Color3` and `Color4` as a unified `Color` API
+ - `Vector2`, `Vector3`, and `Vector4` as a unified `Vector` API
+ - `Matrix`
+
+<router-link to="/types">See the documentation for Types for more information</router-link>
+
+### Retrieving BabylonJS Objects
+
+Most components in this plugin support Vue's model-binding syntax.
+
+#### Notes
+
+ - Use the attribute `v-model` on components 
+ - `v-model` does not require binding syntax
+ - bind it to a property in your data object
+ - Use `null` for your initial value in your data object
+ - The model will not be immediately available, so do not expect populated data in lifecycle hooks
+ - Use a watch function to be notified when the data property is populated and initeract with the object from there
+ - The `v-model` value on some components may change during the lifecycle of the scene, so plan your watchers accordingly
+
+#### Example
+
+##### Template:
+
+```html
+<Scene v-model="myScene">
+  <Entity v-model="myEntity">
+    <Box v-model="myBox"></Box>
+  </Entity>
+</Scene>
+```
+
+##### Script:
+
+```js
+module.exports = {
+  data() {
+    return {
+      myScene: null,
+      myEntity: null,
+      myBox: null,
+    };
+  },
+
+  watch: {
+    myScene() {
+      // myScene is now available from the component
+      // do something with it here or call a method to use it from here
+    },
+
+    myEntity() {
+      // myEntity is now available from the component
+      // do something with it here or call a method to use it from here
+    },
+
+    myBox() {
+      // myBox is now available from the component
+      // do something with it here or call a method to use it from here
+    },
+  },
+};
+```
+
+<router-link to="/entity">See the Entity documentation for more information</router-link>
