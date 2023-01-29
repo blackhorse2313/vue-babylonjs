@@ -135,7 +135,6 @@
 * **light:** add lights ([297622f](https://github.com/Beg-in/vue-babylonjs/commit/297622f))
 
 
-
 # [0.2.0](https://github.com/Beg-in/vue-babylonjs/compare/1c8615b...0.2.0) (2018-01-29)
 
 
