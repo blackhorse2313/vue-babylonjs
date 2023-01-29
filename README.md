@@ -5,8 +5,7 @@ Create high quality 3D graphics in the web as easily as writing HTML and CSS.
 
 Quickly make a 3D animation:
 
-![3D Animation](https://thumbs.gfycat.com/WhiteTangibleIndianspinyloach-size_restricted.gif)
-
+![3D Animation](https://thumbs.gfycat.com/WhiteTangibleIndianspinyloach-size_restricted.gif
 It's this easy:
 
 ```vue
