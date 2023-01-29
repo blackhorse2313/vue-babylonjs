@@ -9,7 +9,6 @@ Quickly make a 3D animation:
 
 It's this easy:
 
-
 ```vue
 <template>
   <Scene>
