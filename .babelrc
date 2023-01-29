@@ -1,5 +1,5 @@
 {
-  "comments": false,
+  "comments":false,
   "presets": [["@babel/preset-env", {
     "targets": "last 2 versions"
   }]],

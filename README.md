@@ -5,10 +5,8 @@ Create high quality 3D graphics in the web as easily as writing HTML and CSS.
 
 Quickly make a 3D animation:
 
-![3D Animation](https://thumbs.gfycat.com/WhiteTangibleIndianspinyloach-size_restricted.gif)
-
+![3D Animation](https://thumbs.gfycat.com/WhiteTangibleIndianspinyloach-size_restricted.gif
 It's this easy:
-
 
 ```vue
 <template>
@@ -70,6 +68,8 @@ We use BabylonJS because it is the most efficient, most feature-rich, and most m
 The underlying engine is easily accessible to give pros the tools to tweak every aspect of BabylonJS. The organizational structure of the library is a Component-Entity-System and the Entity component contains many powerful features such a matrix transformation to allow for interaction with the Scene graph like a group of HTML divs. Powerful tools are available such as an integrated reactive property system that enables modifying 3D objects within templates and a Shader component that makes adding WebGL shaders easy.
 
 ## Contributing
+
+
 
 
 See `CONTRIBUTING.md`
